@@ -9,8 +9,8 @@
 </head>
 <body data-ng-app="urlshortener" data-ng-controller="MainCtrl">
   <div class="content centered" style="top:30%">
-	  <form>
-	  	<input type="text" class="searchr" data-ng-model="userInputURL" placeholder="URL here">
+	  <form data-ng-submit="generateShort()">
+	  	<div>http://</div><input type="text" class="searchr" data-ng-model="userInputURL" placeholder="URL here">
 	  </form>
 	  <div data-ng-show="shortURL" class="rounded-white-box">{{shortURL}}</div>
       
