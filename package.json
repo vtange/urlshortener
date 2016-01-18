@@ -9,8 +9,7 @@
 	"morgan": "~1.0.0",
     "body-parser": "~1.0.0",
     "cookie-parser": "~1.0.0",
-    "hashids": "^1.0.0",
-	"shortids": "2.2.4"
+    "hashids": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
