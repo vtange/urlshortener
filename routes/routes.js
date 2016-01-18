@@ -29,6 +29,7 @@ module.exports = function(app) {
     app.get('/', function(req, res) {
         res.render('index.ejs'); // load the index.ejs file
     });
+	app.get('/new/:url', function(req, res){res.send(JSON.stringify({"error":"Please include 'http://'"}))});
 	app.get('/new/https://:url', function(req, res){getURLinfo(req, res)});
 	app.get('/new/http://:url', function(req, res){getURLinfo(req, res)});
 	app.post('/new/http://:url', function(req, res){getURLinfo(req, res)});
