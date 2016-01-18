@@ -9,7 +9,9 @@
 </head>
 <body data-ng-app="urlshortener" data-ng-controller="MainCtrl">
   <div class="content centered" style="top:30%">
-	  <a><button data-ng-click="generateShort()">Parse header info</button></a>
+	  <form>
+	  	<input type="text" class="searchr" data-ng-model="userInputURL" placeholder="URL here">
+	  </form>
 	  <div data-ng-show="shortURL" class="rounded-white-box">{{shortURL}}</div>
       
       
