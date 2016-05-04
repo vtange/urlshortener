@@ -2,7 +2,23 @@
 
 Client sends a url, Server encodes it and gives a encoded URL
 
-# Takeaways
+## Tech
+ Express, ```hashid``` module
 
-- Using ```hashid``` plugin with strings by converting strings to array of charCodes.
-- Lots of url play
+## Niceties && Detail
+
+Convert text to Character codes
+```
+	function numberfromURL(input){
+		return input.split("").map(function(letter){return letter.charCodeAt(0);});
+  }
+```
+Redirect from encoded url
+
+```
+	app.get('/:code', function (req, res) {
+		var urlToDecode = req.params.code;
+		var origURL = decode(urlToDecode);
+		res.redirect("http://"+origURL)
+});
+```
