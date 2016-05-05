@@ -3,7 +3,7 @@
 Client sends a url, Server encodes it and gives a encoded URL
 
 ## Tech
- Express, ```hashid``` module
+ Express, ```hashid``` module, Angular
 
 ## Niceties && Detail
 
